@@ -1,0 +1,17 @@
+@import "./variable";
+
+.btn-div{
+    button{
+      color:rgb(1, 14, 67);
+      margin-top: 5px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      padding: 5px;  
+    }
+    &-small{
+        background-color: $lightGreen;
+    }
+    &--large{
+        background-color: $darkGreen;
+    }
+}

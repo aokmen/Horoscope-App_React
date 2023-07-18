@@ -1,0 +1,46 @@
+@import "../../scss/variable";
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $turuncu;
+    padding: 0 1rem;
+    .links{
+        display: flex;
+        font-size: 1.5rem;
+        gap: 2%;
+        justify-content: flex-end;
+     
+     
+        a{
+            
+            border-radius: 5px;
+            text-decoration: none;
+            color: #171b20;
+            text-transform: uppercase; 
+            padding: 0.5rem; 
+        }
+     
+    }
+       a:hover{
+            color: $turuncu;
+            background-color: #171b20;
+             
+        }
+    .logo{
+        
+        cursor: pointer;
+    }
+}
+
+
+.logo img{
+    height: 100px;
+}
+@media screen and (max-width:1047px) {
+    .links{
+        flex-direction: column;
+        margin: 10px;
+    }
+}

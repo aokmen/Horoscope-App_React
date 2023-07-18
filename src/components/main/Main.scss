@@ -1,0 +1,88 @@
+@import "../../scss/variable";
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+    .cards{
+        position: relative;
+        height: 350px;
+         width: 500px;
+         overflow: hidden;
+        &:hover{
+          img{
+            opacity: 1;
+        }
+        }
+         
+         img{
+            
+            position: absolute;
+            // height: 100%;
+            // width: 100%;
+            // border-radius: 10px; 
+            // opacity: 0.7;
+            border-radius: 10px;
+            height: 350px;
+            object-fit: cover;
+            opacity: .5;
+            width: 500px;
+            
+            
+          }
+        
+          .title{
+            position: absolute;
+            z-index: 1;
+            color: $turuncu;
+            background-color: rgba(0, 0, 0, 0.738);
+            padding: 10px;
+            border-radius: 10px;
+          }
+          .date{
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 10px;
+            font-size:  4.8px;
+            background-color: rgba(0, 0, 0, 0.738);
+            color: $turuncu;
+            z-index: 2;
+            border-radius: 10px;
+           
+          }  
+          .card-over{
+           
+            position: absolute;
+            height: 100%;
+            z-index: 3;
+            
+            
+            p{
+                padding: 20px;
+                transition: transform 1s ease-in;
+                font-family: 'Almendra Display', cursive;
+                color: white;
+                transform: translateY(400%);
+                background-color: rgba(0, 0, 0, 0.738);
+                border-radius: 10px;
+                font-size: 24px;
+                overflow:auto;
+                height: 75%;
+            }
+          }
+          .card-over:hover{
+           
+            p{
+                transition: transform 1s ease-out;
+                transform: translateY(40%);
+                height: 75%;
+            }
+            
+          }
+    }
+   
+}
