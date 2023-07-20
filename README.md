@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Horoscope Web React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3>visit: https://horoscope-app-react-02.netlify.app/</h3>
+<div align="center"> <img alt="alt_text" src="./horoscope.gif"/> </div>
 
-## Available Scripts
+## Description:
+This project is a Horoscope web application that provides information about different zodiac signs, including their descriptions and associated images. Users can explore the horoscope details for each zodiac sign and learn more about their characteristics and traits.
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+### Navbar Component (Navbar.js)
+- The Navbar component displays the application logo and navigation links.
+- It includes links to different sections, such as Horoscope, Daily, Tarot, Article, and Contact.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Header Component (Header.js)
+- The Header component presents a text with a captivating animation, "Who Are You?"
+- The text has an underline and a flickering effect, creating a visually appealing header.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Main Component (Main.js)
+- The Main component serves as the main content container of the application.
+- It imports the Card component and passes the data array to display information about each zodiac sign.
 
-### `yarn test`
+### Card Component (Card.js)
+- The Card component receives data about each zodiac sign and renders their details.
+- It displays the title, date range, and an image representing the zodiac sign.
+- When hovering over the card, the image opacity increases, providing an interactive user experience.
+- A description paragraph is revealed when hovering over the card, showing the characteristics of the zodiac sign.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Styling
+- SCSS (Sass) is used for styling, providing a maintainable and organized stylesheet.
+- Variables are used to manage colors and other reusable styles.
+- The layout is designed to be responsive, adapting to different screen sizes.
 
-### `yarn build`
+### Data
+- The project uses the 'data' array to store information about each zodiac sign.
+- The array includes details such as title, date range, description, and an image URL for each sign.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Background
+- The application has a visually appealing background with a gradient color scheme.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Fonts
+- Custom fonts from Google Fonts, "Almendra Display" and "Rubik Distressed," are imported for a unique text style.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Button Styling
+- A separate SCSS file is used to style buttons in different sizes (small and large).
+- The buttons have rounded corners, color variations, and proper margins.
 
-### `yarn eject`
+### Responsive Design
+- The application is designed to be responsive, ensuring a consistent user experience across various devices and screen sizes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
+To run this application, follow these steps:
+1. Clone the repository.
+2. Install the required dependencies using npm or yarn.
+3. Start the development server with the appropriate command.
+4. Open the application in your web browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request for any changes.
